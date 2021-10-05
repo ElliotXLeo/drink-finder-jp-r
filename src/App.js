@@ -1,10 +1,10 @@
-import { Fragment } from "react";
 import Formulario from "./components/Formulario";
 import Header from "./components/Header";
+import CategoriasProvider from "./context/CategoriasContext";
 
 function App() {
   return (
-    <Fragment>
+    <CategoriasProvider>
       <Header />
 
       <div className="container mt-5">
@@ -12,7 +12,7 @@ function App() {
           <Formulario />
         </div>
       </div>
-    </Fragment>
+    </CategoriasProvider>
   );
 }
 
