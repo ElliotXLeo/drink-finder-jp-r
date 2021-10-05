@@ -1,6 +1,18 @@
+import { Fragment } from "react";
+import Formulario from "./components/Formulario";
+import Header from "./components/Header";
+
 function App() {
   return (
-    <h1>Buscador de recetas de Bebidas</h1>
+    <Fragment>
+      <Header />
+
+      <div className="container mt-5">
+        <div className="row">
+          <Formulario />
+        </div>
+      </div>
+    </Fragment>
   );
 }
 
