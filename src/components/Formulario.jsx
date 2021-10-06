@@ -23,7 +23,7 @@ const Formulario = () => {
 
   return (
     <form
-      className="col-12"
+      className="col-12 mb-4"
       onSubmit={(e) => {
         e.preventDefault()
         setBusqueda(formulario)
@@ -42,6 +42,7 @@ const Formulario = () => {
             name="nombre"
             placeholder="Buscar por Ingredientes"
             onChange={obtenerFormulario}
+            required
           />
         </div>
 
@@ -50,6 +51,7 @@ const Formulario = () => {
             name="categoria"
             className="form-control"
             onChange={obtenerFormulario}
+            required
           >
             <option value="">-- Selecciona Categoría --</option>
             {categorias.map((categoria) => {
