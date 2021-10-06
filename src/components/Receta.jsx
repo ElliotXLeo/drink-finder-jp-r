@@ -80,12 +80,12 @@ const Receta = ({ receta }) => {
             }}
           >
             <div style={modalStyle} className={classes.paper}>
-              <h2>{recetaBebida.idDrink}</h2>
+              <h2>{recetaBebida.strDrink}</h2>
               <h3 className="mt-4">Instrucciones</h3>
               <p>
                 {recetaBebida.strInstructions}
               </p>
-              <img src={recetaBebida.strDrinkThumb} alt={recetaBebida.strDrink} className="img-fluid my-4" />
+              <img src={recetaBebida.strDrinkThumb} alt={recetaBebida.strDrink} className="my-2 rounded mx-auto d-block w-50" />
               <h3>Ingredientes y cantidades</h3>
               <ul>
                 {mostrarIngredientes(recetaBebida)}
